@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Test from './Test'
 
 export default class Page extends Component {
     render() {
