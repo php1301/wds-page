@@ -1,5 +1,5 @@
 import Homepage from "./components/Homepage";
-import Team from "./components/Team";
+import Services from "./components/Services";
 
 const routes = [
     {
@@ -10,7 +10,7 @@ const routes = [
     {
         path: "/team",
         exact: true,
-        component: Team
+        component: Services
     },
 ]
 export {routes}
