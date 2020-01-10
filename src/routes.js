@@ -1,7 +1,5 @@
 import Homepage from "./components/Homepage";
-import Team from "./components/Team";
-import Vision from "./components/Vision";
-import Contact from "./components/Contact";
+import Services from "./components/Services";
 
 const routes = [
     {
@@ -12,17 +10,7 @@ const routes = [
     {
         path: "/team",
         exact: true,
-        component: Team
+        component: Services
     },
-    {
-        path:"/vision",
-        exact: true,
-        component: Vision
-    },
-    {
-        path: "/contact",
-        exact: true,
-        component: Contact
-    }
 ]
 export {routes}
