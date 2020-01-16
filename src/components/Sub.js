@@ -5,6 +5,8 @@ import $ from 'jquery'
 import TweenMax from 'gsap'
 import * as Scroll from 'react-scroll'
 import { Element } from 'react-scroll'
+import Work from './Work'
+import Team from './Team'
 const ScrollLink = Scroll.Link
 export default class Sub extends Component {
     componentDidMount() {
@@ -84,7 +86,7 @@ export default class Sub extends Component {
                                                                 <p className="mm-header">Home V3</p>
                                                             </a>
                                                             <a href="index-3.html">
-                                                                <img className="img-fluid" src="assets/img/demo/4.jpg" alt={1} />
+                                                                <img className="img-fluid" src="2.jpg" alt={1} />
                                                             </a>
                                                         </div> {/* mm-col */}
                                                         <div className="mm-column col-12 col-md-3 text-center">
@@ -166,6 +168,12 @@ export default class Sub extends Component {
                 </Element>
                 <Element id='about' name='about' >
                     <About />
+                </Element>
+                <Element id = 'works' >
+                    <Work />
+                </Element>
+                <Element id = 'team' >
+                    <Team />
                 </Element>
             </Fragment>
         )
