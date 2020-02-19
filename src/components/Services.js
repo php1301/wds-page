@@ -95,15 +95,17 @@ export default class Test extends Component {
         var teamSlide = window.$('.team .owl-carousel');
         teamSlide.owlCarousel({
           loop: true,
-          margin: 30,
-          mouseDrag: true,
-          autoplay: false,
-          center: false,
-          dots: true,
-          nav: false,
-          dragEndSpeed: 700,
-          smartSpeed: 1000,
-          responsiveClass: true,
+          rewind: true,
+            margin: 30,
+            mouseDrag: true,
+            autoplay: false,
+            center: false,
+            dots: true,
+            nav: false,
+            dotsEach: true,
+            dragEndSpeed: 700,
+            smartSpeed: 1000,
+            responsiveClass: true,
           responsive: {
             0: {
               items: 1,
@@ -114,7 +116,7 @@ export default class Test extends Component {
               margin: 30,
             },
             1000: {
-              items: 4,
+              items: 3,
               margin: 30,
             }
           }
