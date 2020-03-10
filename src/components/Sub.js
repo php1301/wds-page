@@ -7,6 +7,7 @@ import * as Scroll from 'react-scroll'
 import { Element } from 'react-scroll'
 import Work from './Work'
 import Team from './Team'
+import Contact from './Contact'
 const ScrollLink = Scroll.Link
 export default class Sub extends Component {
     componentDidMount() {
@@ -156,8 +157,16 @@ export default class Sub extends Component {
                                             <li><a href="work-page-dark.html">Portfolio Page Dark</a></li>
                                         </ul>
                                     </li>
-                                    <li><a className="nav-link" href="#contatus" data-scroll-nav={5}>Contact</a></li>
-                                </ul>
+                                    <li> <ScrollLink
+                                        to="contact"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        className="nav-link"
+                                        activeClass='some-active-class'
+                                    // data-scroll-nav={1}
+                                    >Contact
+                                        </ScrollLink></li>                                </ul>
                             </div>
                             {/* / */}
                         </div>{/* Container */}
@@ -169,11 +178,14 @@ export default class Sub extends Component {
                 <Element id='about' name='about' >
                     <About />
                 </Element>
-                <Element id = 'works' >
+                <Element id='works' >
                     <Work />
                 </Element>
-                <Element id = 'team' >
+                <Element id='team' >
                     <Team />
+                </Element>
+                <Element id='contact' >
+                    <Contact />
                 </Element>
             </Fragment>
         )
