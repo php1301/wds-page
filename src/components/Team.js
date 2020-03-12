@@ -155,7 +155,7 @@ export default class Team extends Component {
 
             </div>
             <div className="owl-carousel owl-theme owl-loaded owl-drag">
-              <ul className="contacts-list">
+              {/* <ul className="contacts-list">
                 {this.state.display.map((item) => {
                   return (
                     <li className="contact">
@@ -167,7 +167,7 @@ export default class Team extends Component {
                     </li>
                   )
                 })}
-              </ul>
+              </ul> */}
               <div className="owl-stage-outer"><div className="owl-stage" style={{ transform: 'translate3d(-970px, 0px, 0px)', transition: 'all 0s ease 0s', width: 2910 }}>
                 <div className="owl-item" style={{ width: '240px', marginRight: 30 }}><div className="team-slide">
                   <div className="row">
@@ -233,7 +233,7 @@ export default class Team extends Component {
                   </div>
                 </div>
                 </div>
-                <div className="owl-item" style={{ width: '240px', marginRight: 30 }}><div className="team-slide">
+                {/* <div className="owl-item" style={{ width: '240px', marginRight: 30 }}><div className="team-slide">
                   <div className="row">
                     <div className="col-lg-12">
                       <div className="team-item">
@@ -253,7 +253,7 @@ export default class Team extends Component {
                       </div>
                     </div>
                   </div>
-                </div></div>
+                </div></div> */}
                 <div className="owl-item cloned" style={{ width: '240px', marginRight: 30 }}><div className="team-slide">
                 </div>
                 </div>

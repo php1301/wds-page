@@ -1,5 +1,5 @@
 import Homepage from "./components/Homepage";
-import Services from "./components/Services";
+import PageMember from "./components/PageMember";
 
 const routes = [
     {
@@ -8,9 +8,9 @@ const routes = [
         component: Homepage
     },
     {
-        path: "/team",
+        path: "/member",
         exact: true,
-        component: Services
+        component: PageMember
     },
 ]
-export {routes}
+export { routes }
