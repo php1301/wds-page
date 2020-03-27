@@ -20,6 +20,36 @@ export default class Sub extends Component {
             easing: 'ease-in-sine',
             delay: 100,
         });
+        window.$(".navbar-toggler").on("click", function (a) {
+            a.preventDefault() 
+            window.$("header").addClass("fixed-header")
+        });
+        window.$('.navbar-nav .nav-link').on('click', function () {
+            let toggle = $('.navbar-toggler').is(':visible');
+            if (toggle) {
+                window.$('.navbar-collapse').collapse('hide');
+            }
+        });
+    
+        //dropdown
+        dropDown();
+    
+        function dropDown() {
+            var mDropdown = $(".m-dropdown-toggle")
+            mDropdown.on("click", function () {
+                $(this).parent().toggleClass("open-menu-parent");
+                $(this).next('ul').toggleClass("open-menu");
+                $(this).toggleClass("open");
+            });
+            $(".submenu").attr("style", "display: none!important");
+    
+            $(".dropdowns").on('mouseover', function () {
+                $(".submenu").attr("style", "display: block!important");
+            });
+            $(".dropdowns").on('mouseleave', function () {
+                $(".submenu").attr("style", "display: none!important");
+            });
+        }
         navbarScrol();
 
         function navbarScrol() {
@@ -29,7 +59,7 @@ export default class Sub extends Component {
                 $('header').height(HHeight);
                 var bodyScroll = wind.scrollTop();
 
-                if (bodyScroll > 300) {
+                if (bodyScroll > 100) {
                     $('header').addClass('fixed-header');
                     TweenMax.to('.hero', 1, {
                         scale: 1.2,
@@ -71,46 +101,7 @@ export default class Sub extends Component {
                             <div className="collapse navbar-collapse justify-content-end" id="navbar">
                                 <ul className="navbar-nav ml-auto align-items-center">
                                     <li className="m-dropdown m-mega-menu">
-                                        <a className="nav-link" href="#work" data-scroll-nav={0}>Home</a>
-                                        <i className="fa fa-angle-down m-dropdown-toggle" />
-                                        <ul className="m-dropdown-menu m-dropdown-mega-menu">
-                                            <li>
-                                                <div className="container container-large">
-                                                    <div className="row">
-                                                        <div className="mm-column col-12 col-md-3 text-center">
-                                                            <a href="index-1.html">
-                                                                <p className="mm-header">Home V1</p>
-                                                            </a>
-                                                            <a href="index-1.html"><img className="img-fluid" src="assets/img/demo/1.jpg" alt={1} /></a>
-                                                        </div> {/* mm-col */}
-                                                        <div className="mm-column col-12 col-md-3 text-center">
-                                                            <a href="index-2.html">
-                                                                <p className="mm-header">Home V2</p>
-                                                            </a>
-                                                            <a href="index-2.html">
-                                                                <img className="img-fluid" src="assets/img/demo/2.jpg" alt={1} />
-                                                            </a>
-                                                        </div> {/* mm-col */}
-                                                        <div className="mm-column col-12 col-md-3 text-center">
-                                                            <a href="index-3.html">
-                                                                <p className="mm-header">Home V3</p>
-                                                            </a>
-                                                            <a href="index-3.html">
-                                                                <img className="img-fluid" src="2.jpg" alt={1} />
-                                                            </a>
-                                                        </div> {/* mm-col */}
-                                                        <div className="mm-column col-12 col-md-3 text-center">
-                                                            <a href="index-4.html">
-                                                                <p className="mm-header">Home V4 dark</p>
-                                                            </a>
-                                                            <a href="index-4.html">
-                                                                <img className="img-fluid" src="assets/img/demo/3.jpg" alt={1} />
-                                                            </a>
-                                                        </div> {/* mm-col */}
-                                                    </div> {/* row */}
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <a className="nav-link" data-scroll-nav={0}>Home</a>
                                     </li>
                                     <li>
                                         <ScrollLink

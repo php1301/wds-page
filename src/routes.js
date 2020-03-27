@@ -8,7 +8,7 @@ const routes = [
         component: Homepage
     },
     {
-        path: "/member",
+        path: "/members",
         exact: true,
         component: PageMember
     },

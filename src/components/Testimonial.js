@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import photo from "../wp-content/themes/monopo/img/photo-1.png"
 export default class Testimonial extends Component {
   render() {
     return (
@@ -23,42 +23,42 @@ export default class Testimonial extends Component {
                     <p>"Breakfast agreeable incommode departure it an. By ignorant at on wondered relation.
                   Enough at tastes really so cousin am of."</p>
                     <div className="author">
-                      <img src="https://techtalk.vn/mark-zuckerberg-tu-bo-nhung-thach-thuc-ca-nhan-hang-nam-cua-minh.html" alt={1} />
+                      <img src={photo} alt={1} />
                       <p className="author-text">Nattasha, Aloka CEO</p>
                     </div>
                   </div></div><div className="owl-item cloned" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"There is nothing to prevent us from living on the Moon. Many books have been
                   written on this subject. ."</p>
                     <div className="author">
-                      <img src="https://drive.google.com/open?id=1T9nGaGb5id8hXSFIlX4bAGvPEoXqjGDy" alt={1} />
+                      <img src={photo} alt={1} />
                       <p className="author-text">Rafian Sevent</p>
                     </div>
                   </div></div><div className="owl-item active" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"Breakfast agreeable incommode departure it an. By ignorant at on wondered relation.
                   Enough at tastes really so cousin am of."</p>
                     <div className="author">
-                      <img src="https://drive.google.com/open?id=1XMnyfgRrYP_dViJ9db1_2mNSQjlAXTQ3" alt={1} />
+                      <img src={photo} alt={1} />
                       <p className="author-text">Nattasha, Aloka CEO</p>
                     </div>
                   </div></div><div className="owl-item" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"There is nothing to prevent us from living on the Moon. Many books have been
                   written on this subject. ."</p>
                     <div className="author">
-                      <img src="https://drive.google.com/open?id=1r__gcFORs4r_oK1M-aUMxvvrGCKV3L53" alt={1} />
+                      <img src={photo} alt={1} />
                       <p className="author-text">Rafian Sevent</p>
                     </div>
                   </div></div><div className="owl-item cloned" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"Breakfast agreeable incommode departure it an. By ignorant at on wondered relation.
                   Enough at tastes really so cousin am of."</p>
                     <div className="author">
-                      <img src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" alt={1} />
+                      <img src={photo} alt={1} />
                       <p className="author-text">Nattasha, Aloka CEO</p>
                     </div>
                   </div></div><div className="owl-item cloned" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"There is nothing to prevent us from living on the Moon. Many books have been
                   written on this subject. ."</p>
                     <div className="author">
-                      <img src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" alt={1} />
+                      <img src={photo} alt={1} />
                       <p className="author-text">Rafian Sevent</p>
                     </div>
                   </div>

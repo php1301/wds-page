@@ -2,7 +2,28 @@ import React, { useEffect, useState } from 'react';
 import faker from 'faker'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// export default function Members() {
+
+const contacts = [{
+    id: 1,
+    name: 'Quyết Chiến',
+    phoneNumber: 'IOS',
+    image: 'https://lh3.google.com/u/2/d/1yNrN7XRzlk2X6rh3hsCK8IFtlnx_nZMx=w250-h238-p-k-nu-iv1'
+}, {
+    id: 2,
+    name: 'Thiện Đạt',
+    phoneNumber: 'Android',
+    image: 'https://lh3.google.com/u/2/d/1AO1_2wQIxMomwMDKBJKJXwBHS1lW8yU9=w250-h238-p-k-nu-iv1'
+}, {
+    id: 3,
+    name: 'Châu Giang',
+    phoneNumber: 'Windows mobile',
+    image: 'https://lh3.google.com/u/2/d/11E6cNsT2cXlXYA98zU2lvg_XLPau-iGa=w250-h238-p-k-nu-iv2'
+}, {
+    id: 4,
+    name: 'Công Minh',
+    phoneNumber: 'Blackberry OS',
+    image: 'https://lh3.google.com/u/2/d/1r__gcFORs4r_oK1M-aUMxvvrGCKV3L53=w250-h238-p-k-nu-iv1'
+}];
 faker.seed(1258);
 AOS.init({
     offset: 200,
@@ -31,20 +52,26 @@ const Card = (props) => {
             <button class='button1 button1--primary trade' type='button'>
                 Trade
       </button>
-      <a href="https://www.facebook.com/dioxittdn.phucprobb">
-            <button class='button1 button1--secondary like'>
-                <IconLike />
-                <span class='button1-text'>
-                    Like
+            <a href="https://www.facebook.com/dioxittdn.phucprobb">
+                <button class='button1 button1--secondary like'>
+                    <IconLike />
+                    <span class='button1-text'>
+                        Like
         </span>
-            </button>
+                </button>
             </a>
         </div>
     );
 };
 
+
 export const Show = (props) => {
     const [items, setItems] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
+    const handleSearch = e => {
+        setSearchTerm(e.target.value);
+    };
 
     useEffect(() => {
         const fakeItems = [
@@ -73,11 +100,38 @@ export const Show = (props) => {
 
         setItems([...fakeItems]);
     }, []);
-
+    useEffect(() => {
+        const results = items.filter(person =>
+            person.firstName.toLowerCase().includes(searchTerm)
+        );
+        setSearchResults(results);
+    }, [searchTerm]);
     return (
         <section class='section'>
+            <div class="search-box">
+                <div class="searchform">
+                    <input onChange={handleSearch} id="s" type="text" placeholder="Search member" />
+                    <div class="close">
+                        <span class="front"></span>
+                        <span class="back"></span>
+                    </div>
+                </div>
+            </div>
+            {/* {searchTerm === "" ? */}
+            <ul className="contacts-list">
+                {searchResults.map((item, index) => {
+                    { console.log(searchResults) }
+                    return (
+                        <div data-aos="fade-up" class={item.highlighted || 3 === (index % 4) ? 'gallery__item gallery__item--highlight' : 'gallery__item'}>
+                            <Card item={item} key={'item-' + index} />
+                        </div>
+                    )
+                })}
+            </ul>
+            {/* : "" */}
+
             <h2 class='section__title'>
-                {`Our collectors (${items.length})`}
+                {`Our Members (${items.length})`}
             </h2>
             <div class='gallery gallery--grid'>
                 {items && items.map((item, index) => (
@@ -91,7 +145,7 @@ export const Show = (props) => {
 }
 
 const IconLike = () => (
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"/></svg>);
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0" /></svg>);
 const DefaultAvatar = () => {
     return (
         <svg viewBox="0 0 100 100">
