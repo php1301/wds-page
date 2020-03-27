@@ -21,7 +21,7 @@ export default class Work extends Component {
               <div className="owl-stage-outer"><div className="owl-stage" style={{ transition: 'all 0s ease 0s', width: 2883, transform: 'translate3d(361px, 0px, 0px)' }}><div className="owl-item active center" style={{ width: '720.6px' }}><div className="work-item" data-position={0}>
                 <div className="row">
                   <div className="col-12 col-lg-7">
-                    <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/work/3.jpg" alt />
+                    <img className="img-fluid" src="https://i.imgur.com/E9B54mF.png" alt />
                   </div>
                   <div className="col-12 col-lg-5">
                     <div className="work-title">
@@ -34,7 +34,7 @@ export default class Work extends Component {
               </div></div><div className="owl-item active" style={{ width: '720.6px' }}><div className="work-item" data-position={1}>
                 <div className="row">
                   <div className="col-12 col-lg-7">
-                    <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/work/4.jpg" alt />
+                    <img className="img-fluid" src="https://i.imgur.com/9JRpjgn.jpg" alt />
                   </div>
                   <div className="col-12 col-lg-5">
                     <div className="work-title">
@@ -47,7 +47,7 @@ export default class Work extends Component {
               </div></div><div className="owl-item" style={{ width: '720.6px' }}><div className="work-item" data-position={2}>
                 <div className="row">
                   <div className="col-12 col-lg-7">
-                    <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/work/1.jpg" alt />
+                    <img className="img-fluid" src="https://i.imgur.com/qPe98BD.png" alt />
                   </div>
                   <div className="col-12 col-lg-5">
                     <div className="work-title">
@@ -60,7 +60,7 @@ export default class Work extends Component {
               </div></div><div className="owl-item" style={{ width: '720.6px' }}><div className="work-item" data-position={3}>
                 <div className="row">
                   <div className="col-12 col-lg-7">
-                    <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/work/1.jpg" alt />
+                    <img className="img-fluid" src="https://i.imgur.com/pGmXMgT.jpg" alt />
                   </div>
                   <div className="col-12 col-lg-5">
                     <div className="work-title">

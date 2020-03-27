@@ -22,31 +22,31 @@ export default class About extends Component {
                                     <div className="owl-carousel owl-theme owl-loaded">
                                         <div className="owl-stage-outer"><div className="owl-stage" style={{ transform: 'translate3d(-1150px, 0px, 0px)', transition: 'all 2s ease 0s', width: 4025 }}><div className="owl-item cloned" style={{ width: 575 }}><div className="about-item">
                                             <figure className="red-gradient">
-                                                <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/about/slider-2.jpg" alt="about" />
+                                                <img className="img-fluid" src="https://i.imgur.com/NRKX1bU.jpg" alt="about" />
                                             </figure>
                                         </div></div><div className="owl-item cloned" style={{ width: 575 }}><div className="about-item">
                                             <figure className="dark-orange-gradient">
-                                                <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/about/slider-1.jpg" alt="about" />
+                                                <img className="img-fluid" src="https://i.imgur.com/xeNCleG.jpg" alt="about" />
                                             </figure>
                                         </div></div><div className="owl-item active" style={{ width: 575 }}><div className="about-item">
                                             <figure className="blue-gradient">
-                                                <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/about/slider-2.jpg" alt="about" />
+                                                <img className="img-fluid" src="https://i.imgur.com/NRKX1bU.jpg" alt="about" />
                                             </figure>
                                         </div></div><div className="owl-item" style={{ width: 575 }}><div className="about-item">
                                             <figure className="red-gradient">
-                                                <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/about/slider-1.jpg" alt="about" />
+                                                <img className="img-fluid" src="https://i.imgur.com/xeNCleG.jpg" alt="about" />
                                             </figure>
                                         </div></div><div className="owl-item" style={{ width: 575 }}><div className="about-item">
                                             <figure className="dark-orange-gradient">
-                                                <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/about/slider-2.jpg" alt="about" />
+                                                <img className="img-fluid" src="https://i.imgur.com/NRKX1bU.jpg" alt="about" />
                                             </figure>
                                         </div></div><div className="owl-item cloned" style={{ width: 575 }}><div className="about-item">
                                             <figure className="blue-gradient">
-                                                <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/about/slider-1.jpg" alt="about" />
+                                                <img className="img-fluid" src="https://i.imgur.com/xeNCleG.jpg" alt="about" />
                                             </figure>
                                         </div></div><div className="owl-item cloned" style={{ width: 575 }}><div className="about-item">
                                             <figure className="red-gradient">
-                                                <img className="img-fluid" src="http://esensifiksi.com/tf/creativora/assets/img/about/slider-2.jpg" alt="about" />
+                                                <img className="img-fluid" src="https://i.imgur.com/NRKX1bU.jpg" alt="about" />
                                             </figure>
                                         </div></div></div></div><div className="owl-nav disabled"><button type="button" role="presentation" className="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span></button></div><div className="owl-dots disabled" /></div>
                                 </div>
