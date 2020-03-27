@@ -50,13 +50,7 @@ export default class Team extends Component {
                     </p>
                   </div>
                   <div class="search-box">
-                    <div class="searchform">
-                      <input onChange={this.handleSearch} id="s" type="text" placeholder="Search member" />
-                      <div class="close">
-                        <span class="front"></span>
-                        <span class="back"></span>
-                      </div>
-                    </div>
+                    <Link to={{ pathname: "/members", state: {} }} style={{}} class="button-work dark-orange-gradient">View All Members</Link>
                   </div>
                 </div>
               </div>
@@ -136,7 +130,7 @@ export default class Team extends Component {
 
             </div>
             <div className="owl-carousel owl-theme owl-loaded owl-drag">
-              
+
               <div className="owl-stage-outer"><div className="owl-stage" style={{ transform: 'translate3d(-970px, 0px, 0px)', transition: 'all 0s ease 0s', width: 2910 }}>
                 <div className="owl-item" style={{ width: '240px', marginRight: 30 }}><div className="team-slide">
                   <div className="row">
@@ -230,7 +224,6 @@ export default class Team extends Component {
               </div>
 
             </div>
-            <Link to={{ pathname: "/members", state: {} }} style={{ position: "absolute", left: "45%" }} class="button-work dark-orange-gradient">View Project</Link>
           </div>
         </section>
       </div>

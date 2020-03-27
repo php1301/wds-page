@@ -85,7 +85,7 @@ export default class Work extends Component {
             </div>
             <div className="row">
               <div className="col-lg-12 text-center mt-40">
-                <a className="dark-button" href>VIEW ALL WORKS</a>
+                {/* <a className="dark-button" href>VIEW ALL WORKS</a> */}
               </div>
             </div>
           </div>

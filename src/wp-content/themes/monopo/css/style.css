@@ -1,33 +1,4 @@
-/*-----------------------------------------------------------------
-Project             : Creativora - Creative Template for Agency and Portfolio.
-Version             : 1.0
-Author              : Cingunt-Themes
-=====================================================================
 
-[Table of contents]
-
-1. General Style
-2. Header
-3. Hero
-4. Service
-5. Color Setup
-6. Shapes
-7. Work
-8. About
-9. Team
-12. Partner
-13. Service/Work Detail
-14. Works/Portfolio Page
-15. Demo
-
-
-==================================================================*/
-
-/* ==========================================================================
-                            [01] General Style
-   ========================================================================== */
-
-/* Google Font */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900|Playfair+Display:900');
 a {
@@ -2029,6 +2000,7 @@ ul.article-list li {
 .search-box {
     width: 200px;
     margin: 30px auto;
+    transform: translateY(50px);
 }
 
 .searchform {

@@ -10,7 +10,7 @@ export default class About extends Component {
                         <div className="col-lg-8 offset-lg-2 ">
                             <div className="title text-center">
                                 <h2 className="title-text"><span className="orange-underline">About</span></h2>
-                                <p>We're your Creative Agency, since 2010</p>
+                                <p>We're your Creative Agency, since 2018</p>
                                 <div className="dash" />
                             </div>
                         </div>

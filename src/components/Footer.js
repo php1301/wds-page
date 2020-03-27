@@ -40,8 +40,8 @@ export default class Footer extends Component {
                                 <p>CONTACT US:</p>
                                 <div className="footer-text">
                                     Webdev Studio B8.4<br />
-            Đại học Công Nghệ Thông tin - Đại học quốc gia Thành Phố Hồ Chí Minh<br />
-            Khu phố 6, Phường Linh Trung, Quận Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam<br />
+            University Of Information Technology<br />
+            Quarter 6, Linh Trung Ward, Thu Duc District, Ho Chi Minh City, Vietnam<br />
                                 </div>
                                 <div className="footer-text contact">
                                     <a className="secondary-color-2-link osm-gtm-email" href="mailto:office@osomstudio.com">xinchao@webdevstudios.org</a><br />
