@@ -95,15 +95,17 @@ export default class Test extends Component {
         var teamSlide = window.$('.team .owl-carousel');
         teamSlide.owlCarousel({
           loop: true,
-          margin: 30,
-          mouseDrag: true,
-          autoplay: false,
-          center: false,
-          dots: true,
-          nav: false,
-          dragEndSpeed: 700,
-          smartSpeed: 1000,
-          responsiveClass: true,
+          // rewind: true,
+            margin: 30,
+            mouseDrag: true,
+            autoplay: false,
+            center: false,
+            dots: false,
+            nav: false,
+            dotsEach: true,
+            dragEndSpeed: 700,
+            smartSpeed: 1000,
+            responsiveClass: true,
           responsive: {
             0: {
               items: 1,
@@ -114,7 +116,7 @@ export default class Test extends Component {
               margin: 30,
             },
             1000: {
-              items: 4,
+              items: 3,
               margin: 30,
             }
           }
@@ -261,9 +263,7 @@ export default class Test extends Component {
                 <div className="hero-text-2 text-center text-lg-left">
                   <h1 className="fading" style={{ visibility: 'inherit', opacity: 1, transform: 'matrix(1, 0, 0, 1, 0, 0)' }}>Where your ideas <br />
                     evolve to <span>products.</span> </h1>
-                  <p className="fading" style={{ visibility: 'inherit', opacity: 1, transform: 'matrix(1, 0, 0, 1, 0, 0)' }}>Web design and development agency that creates rich digital experiences
-          </p>
-                  <p className="sub-title mt-40 fading" style={{ visibility: 'inherit', opacity: 1, transform: 'matrix(1, 0, 0, 1, 0, 0)' }}>What we provide :</p>
+                  <p className="fading" style={{ visibility: 'inherit', opacity: 1, transform: 'matrix(1, 0, 0, 1, 0, 0)' }}>Web design and development agency that creates rich digital experiences. Have a look at what we provide: </p>
                 </div>
               </div>
             </div>

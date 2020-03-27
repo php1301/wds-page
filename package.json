@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "aos": "^2.3.4",
+    "faker": "^4.1.0",
     "gsap": "^3.0.5",
     "jquery": "^3.4.1",
     "owl.carousel": "^2.3.4",
+    "preact": "^10.3.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
