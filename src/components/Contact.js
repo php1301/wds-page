@@ -12,7 +12,7 @@ export default class Contact extends Component {
                                 <h2 className="title-text" data-text="CONTACT">LET'S WORK TOGETHER</h2>
                                 <p>Get in touch with us to get started.</p>
                                 <div className="dash" />
-                                <div className="mt-50"> <a className="light-button" href="mailto:webmaster@example.com">MAIL US</a></div>
+                                <div className="mt-50"> <a className="light-button" href="mailto:xinchao@webdevstudios.org">MAIL US</a></div>
                             </div>
                             <ScrollLink
                                 to="services"

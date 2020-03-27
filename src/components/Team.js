@@ -161,7 +161,7 @@ export default class Team extends Component {
                           <figure><img src="https://i.imgur.com/ZAxNuKc.png" alt={1} /></figure>
                         </div>
                         <div className="team-text red-gradient">
-                          <h3>Yến Chi - CNTT2018</h3>
+                          <h3>Yến Chi</h3>
                           <p>Graphic Designer</p>
                           <ul className="team-social">
                             <li><a href><i className="fab fa-twitter" aria-hidden="true" /></a></li>
