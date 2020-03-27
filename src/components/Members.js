@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import faker from 'faker'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // export default function Members() {
 faker.seed(1258);
+AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100,
+});
 const Card = (props) => {
     const { item } = props;
     return (
@@ -23,12 +31,14 @@ const Card = (props) => {
             <button class='button1 button1--primary trade' type='button'>
                 Trade
       </button>
+      <a href="https://www.facebook.com/dioxittdn.phucprobb">
             <button class='button1 button1--secondary like'>
                 <IconLike />
                 <span class='button1-text'>
                     Like
         </span>
             </button>
+            </a>
         </div>
     );
 };
@@ -71,7 +81,7 @@ export const Show = (props) => {
             </h2>
             <div class='gallery gallery--grid'>
                 {items && items.map((item, index) => (
-                    <div class={item.highlighted || 3 === (index % 4) ? 'gallery__item gallery__item--highlight' : 'gallery__item'}>
+                    <div data-aos="fade-up" class={item.highlighted || 3 === (index % 4) ? 'gallery__item gallery__item--highlight' : 'gallery__item'}>
                         <Card item={item} key={'item-' + index} />
                     </div>
                 ))}
@@ -81,8 +91,7 @@ export const Show = (props) => {
 }
 
 const IconLike = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z" /></svg>
-);
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"/></svg>);
 const DefaultAvatar = () => {
     return (
         <svg viewBox="0 0 100 100">

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Footer extends Component {
     render() {
         return (
-            <footer id="footer" className="  secondary-color-bg">
+            <footer id="footer" className="secondary-color-bg">
                 <div className="row align-center">
                     <div className="columns xxlarge-10 xlarge-10 large-12 medium-10 small-11">
                         <div className="row align-justify">

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import Test from './Services'
+import Services from './Services'
 import About from './About'
 import $ from 'jquery'
 import TweenMax from 'gsap'
@@ -8,9 +8,18 @@ import { Element } from 'react-scroll'
 import Work from './Work'
 import Team from './Team'
 import Contact from './Contact'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Testimonial from './Testimonial'
 const ScrollLink = Scroll.Link
 export default class Sub extends Component {
     componentDidMount() {
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
         navbarScrol();
 
         function navbarScrol() {
@@ -136,6 +145,16 @@ export default class Sub extends Component {
                                     >Works
                                         </ScrollLink></li>
                                     <li> <ScrollLink
+                                        to="testimonial"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        className="nav-link"
+                                        activeClass='some-active-class'
+                                    // data-scroll-nav={1}
+                                    >Testimonial
+                                        </ScrollLink></li>
+                                    <li> <ScrollLink
                                         to="team"
                                         spy={true}
                                         smooth={true}
@@ -145,18 +164,6 @@ export default class Sub extends Component {
                                     // data-scroll-nav={1}
                                     >Team
                                         </ScrollLink></li>
-                                    <li className="m-dropdown m-dropdown-multilevel">
-                                        <a className="nav-link" href="#">Pages</a>
-                                        <i className="fa fa-angle-down m-dropdown-toggle" />
-                                        <ul className="m-dropdown-menu">
-                                            <li><a href="service-detail.html">Service Detail</a></li>
-                                            <li><a href="work-detail.html">Portfolio Detail</a></li>
-                                            <li><a href="work-page.html">Portfolio Page</a></li>
-                                            <li><a href="service-detail-dark.html">Service Detail Dark</a></li>
-                                            <li><a href="work-detail-dark.html">Portfolio Detail Dark</a></li>
-                                            <li><a href="work-page-dark.html">Portfolio Page Dark</a></li>
-                                        </ul>
-                                    </li>
                                     <li> <ScrollLink
                                         to="contact"
                                         spy={true}
@@ -172,20 +179,23 @@ export default class Sub extends Component {
                         </div>{/* Container */}
                     </nav> {/* Navbar */}
                 </header>
-                <Element id='services' name='services' >
-                    <Test />
+                <Element data-aos="fade-down" id='services' name='services' >
+                    <Services />
                 </Element>
-                <Element id='about' name='about' >
+                <Element data-aos="fade-right" id='about' name='about' >
                     <About />
                 </Element>
-                <Element id='works' >
+                <Element data-aos="fade-left" id='works' >
                     <Work />
                 </Element>
-                <Element id='team' >
+                <Element data-aos="fade-right" id='testimonial' >
+                    <Testimonial />
+                </Element>
+                <Element data-aos="fade-left" id='team' >
                     <Team />
                 </Element>
-                <Element id='contact' >
-                    <Contact />
+                <Element data-aos="fade-right" id='contact' >
+                    <Contact Link={ScrollLink} />
                 </Element>
             </Fragment>
         )

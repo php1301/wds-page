@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-
-export default class Footer extends Component {
+import * as Scroll from 'react-scroll'
+const ScrollLink = Scroll.Link
+export default class Contact extends Component {
     render() {
         return (
             <section className="work-with mt-80" data-scroll-index={5}>
@@ -13,11 +14,21 @@ export default class Footer extends Component {
                                 <div className="dash" />
                                 <div className="mt-50"> <a className="light-button" href="mailto:webmaster@example.com">MAIL US</a></div>
                             </div>
-                            <a className="to-top dark-orange-gradient" href="#" data-scroll-goto={0}>
-                                <i className="fa fa-angle-up" aria-hidden="true" />
-                                <p>PAGE</p>
-                                <p>TOP</p>
-                            </a>
+                            <ScrollLink
+                                to="services"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                className="nav-link"
+                                activeClass='some-active-class'
+                            // data-scroll-nav={1}
+                            ><a className="to-top dark-orange-gradient">
+                                    <i className="fa fa-angle-up" aria-hidden="true" />
+                                    <p>PAGE</p>
+                                    <p>TOP</p>
+                                </a>
+                            </ScrollLink>
+
                         </div>
                     </div>
                 </div>
