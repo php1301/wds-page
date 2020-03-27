@@ -29,7 +29,7 @@ export default class Footer extends Component {
                                         <a className="link osm-gtm-shares" href="https://www.facebook.com/webdevstudios.org/" target="_blank" data-link="Instagram" rel="noopener">Instagram</a>
                                     </li>
                                     <li>
-                                        <a className="link osm-gtm-shares" href="https://www.facebook.com/webdevstudios.org/" target="_blank" data-link="Linkedin" rel="noopener">Linkedin</a>
+                                        <a className="link osm-gtm-shares" href="https://www.facebook.com/webdevstudios.org/" target="_blank" data-link="LinkedIn" rel="noopener">LinkedIn</a>
                                     </li>
                                     <li>
                                         <a className="link osm-gtm-shares" href="https://www.facebook.com/webdevstudios.org/" target="_blank" data-link="Behance" rel="noopener">Behance</a>
