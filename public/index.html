@@ -29,9 +29,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  <script src="https://unpkg.com/preact@10.0.0-rc.1/dist/preact.umd.js"
+    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"
     integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
   <script>
+
     plugins: [
       // other plugins,
       new webpack.ProvidePlugin({
@@ -47,20 +50,6 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" async src="//l.getsitecontrol.com/6y793m78.js">
   </script>
-  <script>
-      $(".navbar-toggler").on("click", function (a) {
-        a.preventDefault();
-        $("header").addClass("fixed-header");
-      });
-
-    $('.navbar-nav .nav-link').on('click', function () {
-      var toggle = $('.navbar-toggler').is(':visible');
-      if (toggle) {
-        $('.navbar-collapse').collapse('hide');
-      }
-    });
-  
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -71,6 +60,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
   <script src='https://kit.fontawesome.com/5e39c529d7.js'></script>
   <script>new WOW().init();</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </body>
 
 </html>
