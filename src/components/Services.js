@@ -14,9 +14,9 @@ export default class Test extends Component {
         aboutSlide.owlCarousel({
           loop: true,
           margin: 30,
-          mouseDrag: false,
+          mouseDrag: true,
           autoplay: true,
-          center: false,
+          center: true,
           dots: false,
           dragEndSpeed: 700,
           smartSpeed: 2000,
@@ -209,13 +209,14 @@ export default class Test extends Component {
 
 
         service2Slide.owlCarousel({
-          loop: false,
+          loop: true,
           margin: 30,
-          startPosition: '1',
-          mouseDrag: false,
-          autoplay: false,
+          startPosition: '2',
+          mouseDrag: true,
+          autoplay: true,
           dots: false,
           dragEndSpeed: 700,
+          autoplayHoverPause: true,
           smartSpeed: 1000,
           responsiveClass: true,
           responsive: {
