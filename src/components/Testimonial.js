@@ -24,42 +24,42 @@ export default class Testimonial extends Component {
                   Enough at tastes really so cousin am of."</p>
                     <div className="author">
                       <img src={photo} alt={1} />
-                      <p className="author-text">Nattasha, Aloka CEO</p>
+                      <p className="author-text">Hien Ngoc, ISE CEO</p>
                     </div>
                   </div></div><div className="owl-item cloned" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"There is nothing to prevent us from living on the Moon. Many books have been
                   written on this subject. ."</p>
                     <div className="author">
                       <img src={photo} alt={1} />
-                      <p className="author-text">Rafian Sevent</p>
+                      <p className="author-text">Chien Nguyen</p>
                     </div>
                   </div></div><div className="owl-item active" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"Breakfast agreeable incommode departure it an. By ignorant at on wondered relation.
                   Enough at tastes really so cousin am of."</p>
                     <div className="author">
                       <img src={photo} alt={1} />
-                      <p className="author-text">Nattasha, Aloka CEO</p>
+                      <p className="author-text">Hien Ngoc, ISE CEO</p>
                     </div>
                   </div></div><div className="owl-item" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"There is nothing to prevent us from living on the Moon. Many books have been
                   written on this subject. ."</p>
                     <div className="author">
                       <img src={photo} alt={1} />
-                      <p className="author-text">Rafian Sevent</p>
+                      <p className="author-text">Chien Nguyen</p>
                     </div>
                   </div></div><div className="owl-item cloned" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"Breakfast agreeable incommode departure it an. By ignorant at on wondered relation.
                   Enough at tastes really so cousin am of."</p>
                     <div className="author">
                       <img src={photo} alt={1} />
-                      <p className="author-text">Nattasha, Aloka CEO</p>
+                      <p className="author-text">Hien Ngoc, ISE CEO</p>
                     </div>
                   </div></div><div className="owl-item cloned" style={{ width: 730 }}><div className="testi-item text-center">
                     <p>"There is nothing to prevent us from living on the Moon. Many books have been
                   written on this subject. ."</p>
                     <div className="author">
                       <img src={photo} alt={1} />
-                      <p className="author-text">Rafian Sevent</p>
+                      <p className="author-text">Chien Nguyen</p>
                     </div>
                   </div>
                     </div>
