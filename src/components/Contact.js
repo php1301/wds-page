@@ -14,21 +14,6 @@ export default class Contact extends Component {
                                 <div className="dash" />
                                 <div className="mt-50"> <a className="light-button" href="mailto:xinchao@webdevstudios.org">MAIL US</a></div>
                             </div>
-                            <ScrollLink
-                                to="services"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                className="nav-link"
-                                activeClass='some-active-class'
-                            // data-scroll-nav={1}
-                            ><a className="to-top dark-orange-gradient">
-                                    <i className="fa fa-angle-up" aria-hidden="true" />
-                                    <p>PAGE</p>
-                                    <p>TOP</p>
-                                </a>
-                            </ScrollLink>
-
                         </div>
                     </div>
                 </div>
