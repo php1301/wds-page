@@ -8,7 +8,7 @@ export default class Footer extends Component {
                     <div className="columns xxlarge-10 xlarge-10 large-12 medium-10 small-11">
                         <div className="row align-justify">
                             <div className="columns large-2 medium-12 small-12 animation fromTop t-delay-20 p-t-5 show-for-large in-view">
-                                <a  href="https://osomstudio.com" className="logo"><img style={{ width: "215px" }} src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" alt="Osom Studio" data-lazy-src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" className="lazyloaded" data-was-processed="true" /><noscript>&lt;img src="https://mk0osomstudioc8mx6dt.kinstacdn.com/app/themes/osomstudio/dist/images/logo-white.svg" alt="Osom Studio"/&gt;</noscript></a>
+                                <a  href="https://osomstudio.com" className="logo"><img style={{ width: "215px" }} src="https://i.imgur.com/UsiRjMt.png" alt="WDS Studio" data-lazy-src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" className="lazyloaded" data-was-processed="true" /><noscript>&lt;img src="https://mk0osomstudioc8mx6dt.kinstacdn.com/app/themes/osomstudio/dist/images/logo-white.svg" alt="WDS Studio"/&gt;</noscript></a>
                             </div>
                             <div className="columns large-3 medium-4 small-6 animation fromTop t-delay-40 in-view">
                                 <p>See Also:</p>
