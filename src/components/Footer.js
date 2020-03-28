@@ -3,12 +3,12 @@ import React, { Component } from 'react'
 export default class Footer extends Component {
     render() {
         return (
-            <footer id="footer" className="secondary-color-bg">
+            <footer id="footer" className="primary-color-bg">
                 <div className="row align-center">
                     <div className="columns xxlarge-10 xlarge-10 large-12 medium-10 small-11">
                         <div className="row align-justify">
                             <div className="columns large-2 medium-12 small-12 animation fromTop t-delay-20 p-t-5 show-for-large in-view">
-                                <a  href="https://osomstudio.com" className="logo"><img style={{ width: "215px" }} src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" alt="Osom Studio" data-lazy-src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" className="lazyloaded" data-was-processed="true" /><noscript>&lt;img src="https://mk0osomstudioc8mx6dt.kinstacdn.com/app/themes/osomstudio/dist/images/logo-white.svg" alt="Osom Studio"/&gt;</noscript></a>
+                                <a  href="#" className="logo"><img style={{ width: "215px" }} src="https://i.imgur.com/UsiRjMt.png" alt="Osom Studio" data-lazy-src="https://webdevstudios.org/wp-content/uploads/2019/01/Asset-2.png" className="lazyloaded" data-was-processed="true" /><noscript>&lt;img src="https://mk0osomstudioc8mx6dt.kinstacdn.com/app/themes/osomstudio/dist/images/logo-white.svg" alt="Osom Studio"/&gt;</noscript></a>
                             </div>
                             <div className="columns large-3 medium-4 small-6 animation fromTop t-delay-40 in-view">
                                 <p>See Also:</p>
@@ -44,7 +44,7 @@ export default class Footer extends Component {
             Quarter 6, Linh Trung Ward, Thu Duc District, Ho Chi Minh City, Vietnam<br />
                                 </div>
                                 <div className="footer-text contact">
-                                    <a className="secondary-color-2-link osm-gtm-email" href="mailto:office@osomstudio.com">xinchao@webdevstudios.org</a><br />
+                                    <a style={{color:"#f3a91f"}}className="secondary-color-2-link osm-gtm-email" href="mailto:office@osomstudio.com">xinchao@webdevstudios.org</a><br />
                                 </div>
                             </div>
                             {/* <div id="copyright" className="columns large-12 medium-12 small-12 animation fromTop t-delay-90 in-view">
